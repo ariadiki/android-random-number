@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".NameOfPlayers">
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/write"
+        android:id="@+id/img_write"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="Enter your Name"
+        android:textStyle="bold"
+        android:layout_below="@id/img_write"
+        android:gravity="center"
+        android:layout_marginBottom="60dp"
+        android:textColor="@color/grey"
+        android:id="@+id/txt_write"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_write"
+        android:layout_margin="20dp"
+        android:id="@+id/tb_write">
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                />
+            <EditText
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:id="@+id/edit1"
+                android:hint="Player 1 enter your name"
+                android:inputType="textPersonName"
+                android:layout_width="260dp"
+                android:layout_marginTop="7dp"
+                android:maxLength="8"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="25dp">
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                />
+            <EditText
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:id="@+id/edit2"
+                android:hint="Player 2 enter your name"
+                android:inputType="textPersonName"
+                android:layout_width="260dp"
+                android:layout_marginTop="7dp"
+                android:maxLength="8"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="25dp">
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                />
+            <EditText
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:id="@+id/edit3"
+                android:hint="Player 3 enter your name"
+                android:inputType="textPersonName"
+                android:layout_width="260dp"
+                android:layout_marginTop="7dp"
+                android:maxLength="8"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@id/tb_write"
+        android:layout_margin="30dp"
+        android:textSize="30sp"
+        android:textAllCaps="false"
+        android:onClick="save_click"/>
+</RelativeLayout>

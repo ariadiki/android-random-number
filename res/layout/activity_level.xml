@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LevelActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/level"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your Level"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="@color/grey"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"/>
+
+    <Button
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Easy"
+        android:textSize="30sp"
+        android:backgroundTint="@color/grey"
+        android:textAllCaps="false"
+        android:id="@+id/easy"/>
+
+    <Button
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium"
+        android:textSize="30sp"
+        android:backgroundTint="@color/grey"
+        android:textAllCaps="false"
+        android:id="@+id/medium"/>
+
+    <Button
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hard"
+        android:textSize="30sp"
+        android:backgroundTint="@color/grey"
+        android:textAllCaps="false"
+        android:id="@+id/hard"/>
+
+    <Button
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expert"
+        android:textSize="30sp"
+        android:backgroundTint="@color/grey"
+        android:textAllCaps="false"
+        android:id="@+id/expert"/>
+
+    <Button
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Specific"
+        android:textSize="30sp"
+        android:backgroundTint="@color/grey"
+        android:textAllCaps="false"
+        android:id="@+id/specific"/>
+
+</LinearLayout>

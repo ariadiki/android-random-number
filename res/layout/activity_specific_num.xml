@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".SpecificNum"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/think"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your Range"
+        android:textSize="30sp"
+        android:textColor="@color/grey"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="min :"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/minput"
+        android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="max :"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/maxput"
+            android:inputType="number"/>
+    </LinearLayout>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Apply"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/grey"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_marginTop="40dp"
+            android:id="@+id/apply"
+            android:onClick="apply_click"/>
+
+</LinearLayout>

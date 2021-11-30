@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayersActivity"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:gravity="center">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How much Players ?"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowRadius="@android:integer/config_shortAnimTime"
+        android:text="1 Player"
+        android:drawableLeft="@drawable/oneplayer"
+        android:textSize="30sp"
+        android:backgroundTint="@color/grey"
+        android:textAllCaps="false"
+        android:id="@+id/oneplayer"/>
+
+    <Button
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowRadius="@android:integer/config_shortAnimTime"
+        android:text="2 Players"
+        android:drawableLeft="@drawable/twoplayers"
+        android:textSize="30sp"
+        android:backgroundTint="@color/grey"
+        android:textAllCaps="false"
+        android:id="@+id/twoplayers"/>
+
+    <Button
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowRadius="@android:integer/config_shortAnimTime"
+        android:text="3 Players"
+        android:drawableLeft="@drawable/threeplayers"
+        android:textSize="30sp"
+        android:backgroundTint="@color/grey"
+        android:textAllCaps="false"
+        android:id="@+id/threeplayers"/>
+
+</LinearLayout>
